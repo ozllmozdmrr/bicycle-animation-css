@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana, monospace, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    min-height: 900px;
+    background-color: #F1F7DE;
+}
+
+#deneme {
+    width: 600px;
+    height: 600px;
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+}
+
+.body-bicycle {
+    text-align: center;
+
+    z-index: 2;
+    position: relative;
+    margin: auto;
+}
+
+
+.back,
+.front {
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.front {
+    top: 55%;
+    left: 61%;
+
+}
+
+.back {
+
+    top: 58%;
+    left: 17%;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.balloon-one,
+.balloon-two {
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+    top: 0%;
+}
+
+.balloon-one {
+    left: 0%;
+}
+
+.balloon-two {
+    top: 0%;
+    left: 80%;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateY(90%);
+    }
+
+    100% {
+        transform: translateY(-25%);
+    }
+}
+
+
+
+.shadow {
+    position: absolute;
+    
+    top: 82%;
+    left: 0%;
+    
+
+}
